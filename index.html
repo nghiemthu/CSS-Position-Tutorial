@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Positions</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">Kipy</div>
+
+    <button>Sign in</button>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="photos">
+        <img class="puppy-photo"
+          src="https://images.unsplash.com/photo-1597806999047-9456837df754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+          alt="Corgi">
+
+        <img class="kitty-photo"
+          src="https://images.unsplash.com/photo-1617182545423-bcabd1be1896?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=934&q=80"
+          alt="Kitty">
+      </div>
+
+      <h1>Kitty or Puppy</h1>
+      <p>Cras id felis luctus, tincidunt elit quis, aliquet justo. Donec nec tincidunt massa.</p>
+    </section>
+
+    <section class="about">
+      <div class="about__nav">
+        <h3>About Kitty</h3>
+
+        <a class="about__nav__item" href="#intro">Intro</a>
+
+        <a class="about__nav__item" href="#main">Main</a>
+
+        <a class="about__nav__item" href="#summary">Summary</a>
+      </div>
+
+
+      <div class="about__content">
+        <h4 id="intro">Intro</h4>
+
+        <img
+          src="https://images.unsplash.com/photo-1509123779391-4a82c1c0264f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+          alt="kitty-article">
+
+        <p>Aliquam semper lacus et efficitur volutpat. Cras id felis luctus, tincidunt elit quis, aliquet justo. Donec
+          nec
+          tincidunt massa. Cras dictum augue a
+          sollicitudin aliquet.</p>
+
+        <p>Vivamus faucibus urna in arcu commodo interdum. Sed euismod dui vitae sapien pharetra, in pellentesque leo
+          bibendum. Donec sagittis lacinia dui. Curabitur eu nulla vel odio bibendum iaculis. Nunc dictum sapien at
+          tellus
+          volutpat, non vehicula augue rutrum. Vivamus faucibus ante a metus scelerisque sodales. Proin sit amet
+          egestas
+          justo.
+
+        <h4 id="main">Main</h4>
+
+        <p>Ut blandit enim magna, vitae pellentesque nisi lacinia non. Fusce bibendum libero sed suscipit egestas.</p>
+
+        <p>Vivamus faucibus urna in arcu commodo interdum. Sed euismod dui vitae sapien pharetra, in pellentesque leo
+          bibendum. Donec sagittis lacinia dui. Curabitur eu nulla vel odio bibendum iaculis. Nunc dictum sapien at
+          tellus
+          volutpat, non vehicula augue rutrum. Vivamus faucibus ante a metus scelerisque sodales. Proin sit amet
+          egestas
+          justo.</p>
+
+        <p>Vivamus faucibus urna in arcu commodo interdum. Sed euismod dui vitae sapien pharetra, in pellentesque leo
+          bibendum. Donec sagittis lacinia dui. Curabitur eu nulla vel odio bibendum iaculis. Nunc dictum sapien at
+          tellus
+          volutpat, non vehicula augue rutrum. Vivamus faucibus ante a metus scelerisque sodales. Proin sit amet
+          egestas
+          justo. </p>
+
+
+        <h4 id="summary">Summary</h4>
+
+        <p> Quisque id ante laoreet, ornare nibh ac, gravida neque. Curabitur facilisis vulputate risus eu placerat.
+          Pellentesque efficitur enim eu lacinia congue. Nam non nulla quis purus consectetur maximus id non sem.
+          Donec
+          massa neque, ullamcorper eget tellus non, congue pretium eros. Aliquam eget tincidunt nibh. Integer egestas
+          auctor tempor. Cras eu magna sed odio varius mattis eu sit amet justo.</p>
+      </div>
+
+    </section>
+
+    <section class="story">
+      <img
+        src="https://images.unsplash.com/photo-1607334250739-56cbb2b87266?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=934&q=80"
+        alt="puppy-article">
+
+      <h3>Pellentesque efficitur enim eu</h3>
+
+      <p> Quisque id ante laoreet, ornare nibh ac, gravida neque. Curabitur facilisis vulputate risus eu placerat.
+        Pellentesque efficitur enim eu lacinia congue. Nam non nulla quis purus consectetur maximus id non sem.
+        Donec
+        massa neque, ullamcorper eget tellus non, congue pretium eros. Aliquam eget tincidunt nibh. Integer egestas
+        auctor tempor. Cras eu magna sed odio varius mattis eu sit amet justo.</p>
+    </section>
+  </main>
+
+
+  <footer>More tutorials on <a href="https://devchallenges.io/">devchallenges.io</a> </footer>
+
+
+  <div class="privacy-popup">
+    <p>Your privacy</p>
+    <p>By using this website Sed euismod dui vitae sapien pharetra</p>
+
+    <button class="close-button">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="white">
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+      </svg>
+    </button>
+
+  </div>
+
+</body>
+
+</html>

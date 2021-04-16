@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-weight: 300;
+  color: #333;
+
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+p {
+  line-height: 1.25;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+
+  font-family: "Lato", sans-serif;
+  font-size: 0.75rem;
+  color: #333;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+section {
+  padding: 50px 12px;
+}
+
+/* 
+Task 1:
+
+- Use relative position to move the puppy photo 20px to the right and 40px to the bottom
+- Use relative position to move the kitty photo 20px to the left and 40px to the top
+- Give the element with `photos` class vertical padding of 40px
+- Give the puppy photo z-index equal to 1
+
+Task 2:
+
+- Use position absolute to align close button to the top right corner of the privacy popup
+
+Task 3:
+
+- Use position fixed to align the privacy popup to the bottom right corner
+
+Task 4:
+
+- Use position sticky to keep the navigation stay on top when users scroll and give it z-index equal to 2
+- In about section, use position sticky to keep the side navigation at the same place when users scroll within their parent elements
+
+Task 5:
+
+- In the `about` section, use float to wrap the paragraph around the image and align the image to the right
+*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 8px 12px;
+  box-shadow: 0 15px 35px 0 rgb(60 66 87 / 8%), 0 5px 15px 0 rgb(0 0 0 / 12%);
+  background-color: white;
+}
+
+.photos {
+}
+
+.photos img {
+  width: 40%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.puppy-photo {
+
+}
+
+.kitty-photo {
+
+}
+
+section.hero {
+  text-align: center;
+}
+
+section.about {
+  background-color: #eff2f4;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.about__nav {
+  grid-column: 1 / span 2;
+  height: fit-content;
+}
+
+.about__nav__item {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: #555;
+}
+
+.about__content {
+  grid-column: 3 / span 4;
+}
+
+.about__content img {
+  width: 50%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.about__content h4:first-of-type {
+  margin-top: 0;
+}
+
+.privacy-popup {
+  padding: 12px 24px;
+  background-color: #2f3437;
+  color: white;
+  font-size: 0.875rem;
+}
+
+.privacy-popup .close-button {
+  padding: 0;
+  background-color: #2f3437;
+}
+
+.privacy-popup p:first-of-type {
+  font-weight: bold;
+ }
+
+section.story {
+  text-align: center;
+}
+
+section.story img {
+  width: 50%;
+  margin-bottom: 40px;
+  height: 300px;
+  object-fit: cover;
+}
+
+footer {
+  padding: 20px;
+  background-color: #eff2f4;
+}
